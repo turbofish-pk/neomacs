@@ -1188,7 +1188,7 @@ version = "0.18.2"
 source = "git+https://github.com/eval-exec/cosmic-text?rev=5dd3fec8572e771794e3f203ab6780d828e9ce09#5dd3fec8572e771794e3f203ab6780d828e9ce09"
 dependencies = [
  "bitflags 2.13.1",
- "fontdb",
+ "fontdb 0.23.0",
  "harfrust",
  "linebender_resource_handle",
  "log",
@@ -2043,6 +2043,19 @@ dependencies = [
  "slotmap",
  "tinyvec",
  "ttf-parser",
+]
+
+[[package]]
+name = "fontdb"
+version = "0.24.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2660c5e9157bf76d2db1294e4a9feba604ef610819a3b591088d0d8392a3290f"
+dependencies = [
+ "fontconfig-parser",
+ "log",
+ "memmap2",
+ "slotmap",
+ "tinyvec",
 ]
 
 [[package]]
@@ -3763,7 +3776,7 @@ dependencies = [
  "cosmic-text",
  "crossbeam-channel",
  "crossterm",
- "fontdb",
+ "fontdb 0.24.0",
  "image",
  "libc",
  "neomacs-display-protocol",
@@ -3809,7 +3822,7 @@ dependencies = [
  "allsorts",
  "cosmic-text",
  "flate2",
- "fontdb",
+ "fontdb 0.24.0",
  "freetype-rs",
  "neomacs-display-protocol",
  "neomacs-test-fonts",
@@ -3836,7 +3849,7 @@ dependencies = [
  "cosmic-text",
  "dwrote",
  "fontconfig",
- "fontdb",
+ "fontdb 0.24.0",
  "freetype-rs",
  "memchr",
  "neomacs-display-protocol",
@@ -3918,7 +3931,7 @@ dependencies = [
  "bytemuck",
  "cosmic-text",
  "flate2",
- "fontdb",
+ "fontdb 0.24.0",
  "image",
  "imagesize 0.15.0",
  "libc",
@@ -7605,7 +7618,7 @@ dependencies = [
  "base64 0.22.1",
  "data-url",
  "flate2",
- "fontdb",
+ "fontdb 0.23.0",
  "imagesize 0.14.0",
  "kurbo",
  "log",
